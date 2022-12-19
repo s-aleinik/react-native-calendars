@@ -6,10 +6,13 @@ export default function styleConstructor(theme: Theme = {}) {
   const appStyle = {...defaultStyle, ...theme};
   return StyleSheet.create({
     container: {
-      flexDirection: 'row'
+      flexDirection: 'column'
     },
     innerContainer: {
       flex: 1
+    },
+    content: {
+      marginTop: 24
     },
     dayNum: {
       fontSize: 28,
